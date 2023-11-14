@@ -1,71 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-    <nav id="navbar">
-        <ul>
-            <li><a href="#welcome-section">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
-        <a id="profile-link" href="https://github.com/TrinaIlyza/CIT142H-PROJECTS.git" target="_blank">GitHub</a>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navbar" class="nav">
+      <ul class="nav-list">
+        <li>
+          <a href="#welcome-section">About</a>
+        </li>
+        <li>
+          <a href="#projects">Work</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
     </nav>
-    <section id="welcome-section">
-        <h1>Annyeong! I'm Trina Ilyza</h1>
-        <h2>an Information Technology student</h2>
+
+    <section id="welcome-section" class="welcome-section">
+      <h1>Annyeong! I'm Trina</h1>
+      <p>an IT student of University of the Cordilleras </p>
     </section>
-    <section id="projects">
-    <div class="project-tile">
-        <div class="project-content">
-            <h3 class="project-title">These are some of my codes/outputs</h3>
-            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Cat Photo">
-            <p><a href="http://127.0.0.1:5500/CatPhotoApp.html">Cat Photo App</a></p>
-        </div>
-    </div>
-    <div class="project-tile">
-        <div class="project-content">
-            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg" alt="Tribute Page Screenshot">
-            <p><a href="https://codepen.io/freeCodeCamp/full/zNqgVx">Tribute Page</a></p>
-        </div>
-    </div>
-    <div class="project-tile">
-        <div class="project-content">
-            <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg" alt="Cat Photo">
-            <p><a href="http://127.0.0.1:5500/PhotoGallery.html">Photo Gallery</a></p>
-        </div>
-    </div>
-    <div class="project-tile">
-        <div class="project-content">
-            <img src="https://d3jmn01ri1fzgl.cloudfront.net/photoadking/webp_thumbnail/609e6151442f0_json_image_1620992337.webp" alt="cafe menu">
-            <p><a href="http://127.0.0.1:5500/CafeMenu.html">Cafe Menu</a></p>
-        </div>
-    </div>
-    <div class="project-tile">
-        <div class="project-content">
-            <img src="https://static.vecteezy.com/system/resources/previews/017/198/650/original/cartoon-cute-penguin-isolated-on-white-background-vector.jpg" alt="penguin">
-            <p><a href="http://127.0.0.1:5500/Penguin.html">Penguin</a></p>
-        </div>
-    </div>
-    <div class="project-tile">
-        <div class="project-content">
-            <img src="https://img.freepik.com/free-vector/city-skyline-landmarks-illustration_23-2148810174.jpg" alt="city picture">
-            <p><a href="http://127.0.0.1:5500/CitySkyline.html">City Skyline</a></p>
-        </div>
-    </div>
-</section>
-<section id="footer">
-    <div class="footer-content">
-        <p>Let's work together...</p>
-    </div>
-    <p class="footer_last">How do you take your coffee?</p>
-    <div class="footer-links">
-        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-    </div>
-    <p class="disclaimer">**This is just a fake portfolio. All the projects and contact details given are not real.</p>
-</section>
-</body>
+
+    <section id="projects" class="projects-section">
+      <h2 class="projects-section-header">Here are my projects in CIT14</h2>
+
+      <div class="projects-grid">
+        <a
+          href="https://trinailyza.github.io/Tribute-Page/"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcQyDMFo5hdxbNjNpnD-cZGDw_5Yr2tTgJdHyYJaBKHIUZ-t6cGF0z7W-umFpfmY6LbCJw9i0BJETQXnCoA"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            John Stuart Mill Tribute Page
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://trinailyza.github.io/Product-Landing-Page/"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://www.coffeefriend.co.uk/app/uploads/2021/01/Frappe-virselis.jpg"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Bos Coffee Landing Page
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://trinailyza.github.io/Survey-Form/"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t39.30808-6/273617180_101400779145012_1799897946156566234_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFqgCJElMcGle501fLgad652Xd5YnaxP7XZd3lidrE_tR5pkR1-Y6_Mx4otGXLFTzx8g-Lr3Swtq4OyZkJUfZB2&_nc_ohc=tI1TgejZwOwAX9J6Ys3&_nc_ht=scontent.fmnl4-3.fna&oh=00_AfDD-0D2g9VeXXo9eFtxABbmHcBMDV947zMiB5LwIO2htA&oe=65577AB2"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            BigBrew Survey Form
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://trinailyza.github.io/Technical-Documentation-Page/"_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://www.grandmetric.com/wp-content/webp-express/webp-images/uploads/2022/07/IP-obtaining-mechanism-in-the-Ethernet-type-network-by-Grandmetric.png.webp"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            LAN Security Concepts Documentation Page
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="contact-section-header">
+        <h2>Let's work together!</h2>
+        <p>How about some coffee?</p>
+      </div>
+      <div class="contact-links">
+        <a
+          href="https://www.facebook.com/trinailyza.sobrepenaa"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-facebook-square"></i> Facebook</a
+        >
+        <a
+          id="profile-link"
+          href="https://github.com/TrinaIlyza"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-github"></i> GitHub</a
+        >
+      
+        <a href="sobrepenatrinaa@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a
+        >
+        <a href="cel:09953913780" class="btn contact-details"
+          ><i class="fas fa-mobile-alt"></i> Call me</a
+        >
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        **This is just a fake portfolio. All the projects and contact details
+        given are not real.
+      </p>
+      <p>
+        &copy; Created for CIT14 requirements</p>
+    </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
 </html>
