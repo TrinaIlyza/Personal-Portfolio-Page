@@ -1,8 +1,8 @@
 :root {
-  --main-white: #f0f0f0;
-  --main-red: #be3144;
-  --main-blue: #45567d;
-  --main-gray: #303841;
+  --main-white: #241200;
+  --main-red: #BCAAA4;
+  --main-blue: #A1887F;
+  --main-gray: #D7CCC8;
 }
   * {
   margin: 0;
@@ -80,7 +80,7 @@ img {
   
 .nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -90,9 +90,20 @@ img {
   z-index: 10;
 }
 
+.nav-logo {
+  height: 58px; 
+  width: auto; 
+  margin: 8px; 
+}
+
 .nav-list {
   display: flex;
+  align-items: center;
   margin-right: 2rem;
+}
+
+.nav-list li:first-child {
+  margin-right: auto; /* Push other nav items to the right */
 }
 
 @media (max-width: 28.75em) {
@@ -124,16 +135,83 @@ img {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: #000;
-  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  background: url('pics/bg.jpg') no-repeat center center/cover;
+  text-align: center; 
+}
+
+
+.welcome-section img {
+  width: 250px; 
+  height: 350px; 
+  object-fit: cover; 
+  border-radius: 50%; 
+  border: 5px solid var(--main-white); 
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.welcome-section > h1 {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
 }
 
 .welcome-section > p {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 200;
   font-style: italic;
-  color: var(--main-red);
+  color: black;
 }
+
+
+/* General Section Styling */
+.educ, .expe, .skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 2rem; /* Adjust spacing for better layout */
+  background-color: var(--main-gray); /* Matches the main-gray background */
+  color: #000; /* Switch to dark text for better readability */
+}
+
+.educ h2, .expe h2, .skill h2 {
+  font-size: 4rem;
+  color: var(--main-blue); /* Use the main-blue for headings */
+  margin-bottom: 2rem; /* Add spacing between the heading and content */
+}
+
+.educ ul, .expe ul, .skill ul {
+  max-width: 800px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+.educ ul li, .expe ul li, .skill ul li {
+  font-size: 2rem;
+  line-height: 1.8;
+  margin-bottom: 1rem; /* Add spacing between list items */
+  background: var(--main-white);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.educ ul li strong, .expe ul li strong {
+  color: var(--main-blue); /* Highlight important text */
+}
+
+.skill ul li {
+  display: inline-block;
+  font-size: 2rem;
+  background: var(--main-white);
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 
 /* Projects section */
 
